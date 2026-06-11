@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>hi, im ping wee</h1>
+			<p>
+				welcome to my blog! 
+			</p>
+			<p>
+				here you'll find a random assortment of my thoughts, and things that i feel are worth sharing about.
+			</p>
+			<p>
+				find more info about me and my work at <a href="https://pingw.me">pingw.me</a>!
+			</p>
+			<p>go to <a href="/blog">posts</a></p>
+		</main>
+		<Footer />
+	</body>
+</html>
