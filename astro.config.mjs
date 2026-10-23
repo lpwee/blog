@@ -8,6 +8,10 @@ import { defineConfig, fontProviders } from 'astro/config';
 export default defineConfig({
 	site: 'https://blog.pingw.me',
 	integrations: [mdx(), sitemap()],
+	redirects: {
+		'/blog': '/posts',
+		'/blog/[...slug]': '/posts/[...slug]',
+	},
 	markdown: {
 		shikiConfig: {
 			theme: 'one-dark-pro',
